@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Create Account</h2>
+        <form action="useraccount.php" method="POST" onsubmit="return validateForm()">
+            <div class="row">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            </div>
+            <div class="row">
+                <label>Gender:</label>
+                <input type="radio" id="female" name="gender" value="female" required> 
+                <label for="female">Female</label>
+                <input type="radio" id="male" name="gender" value="male" required> 
+                <label for="male">Male</label>
+                <input type="radio" id="others" name="gender" value="others" required> 
+                <label for="others">Others</label>
+            </div>
+            <div class="row">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+            <div class="row">
+                <label for="mobile">Mobile no.:</label>
+                <input type="tel" id="mobile" name="mobile" placeholder="Enter your mobile number" pattern="[0-9]{10}" required>
+            </div>
+            <div class="row">
+                <label for="city">City:</label>
+                <input type="text" id="city" name="city" placeholder="Enter your city" required>
+            </div>
+            <div class="row">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            </div>
+            <div class="row">
+                <label for="cpassword">Confirm Password:</label>
+                <input type="password" id="cpassword" name="cpassword" placeholder="Confirm your password" required>
+            </div>
+            <input type="submit" value="Create Account">
+            <a href="login.html" class="back-link">Go back</a>
+        </form>
+    </div>
+
+    <script>
+        function validateForm() {
+            var name = document.getElementById("name").value;
+            var gender = document.querySelector('input[name="gender"]:checked');
+            var email = document.getElementById("email").value;
+            var mobile = document.getElementById("mobile").value;
+            var city = document.getElementById("city").value;
+            var password = document.getElementById("password").value;
+            var cpassword = document.getElementById("cpassword").value;
+
+            if (password != cpassword) {
+                alert("Passwords do not match");
+                return false;
+            }
+
+            return true;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,335 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    background-color: #f4f4f4;
+}
+
+.header {
+    color: aliceblue;
+    background-color: rgb(34, 139, 139);
+    padding: 10px 8%;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;  
+}
+
+.title-nav-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.header h1 {
+    margin-top: 25px;
+}
+
+.header nav {
+    display: flex;
+    justify-content: center;
+}
+
+.header nav a {
+    padding: 5px;
+    text-decoration: none;
+    margin-right: 20px;
+    margin-top: 5px;
+    color: aliceblue;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.header nav a:hover {
+    background-color: aliceblue;
+    color:rgb(34, 139, 139);
+}
+.header button {
+    margin: 25px 10px;
+    background-color: rgb(102, 160, 110);
+    color: aliceblue;
+    outline: 0;
+    border: 0;
+    padding: 9px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 15px;
+    transition-duration: 0.3s;
+}
+
+.header input {
+    padding: 9px 20px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.main {
+    display: flex;
+    background-color: aliceblue;
+    align-items: center;
+    padding: 70px;
+    border-bottom: 1px solid rgb(153, 225, 238);
+}
+
+.text-col {
+    flex-basis: 50%;
+    background-color: rgb(50, 199, 199);
+    color: #fff;
+    padding: 9px 20px;
+    border-radius: 4px;
+    padding-left: 150px;
+}
+
+.text-col button {
+    background-color: rgb(85, 122, 122);
+    color: aliceblue;
+    border: 1px solid rgb(248, 246, 246);
+    padding: 9px 20px;
+    width: 200px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 20px;
+    transition-duration: 0.3s;
+    margin: 15px;
+}
+
+.img-col {
+    flex-basis: 50%;
+}
+
+.img-col img {
+    width: 90%;
+}
+
+.text-col button:hover {
+    background-color: aliceblue;
+    color: rgb(85, 122, 122);
+}
+
+.header button:hover {
+    color: rgb(102, 160, 110);
+    background-color: aliceblue;
+}
+
+.feedback {
+    padding: 70px;
+    background-color: rgb(220, 230, 240);
+    color: rgb(40, 121, 117);
+    border-bottom: 1px solid rgb(153, 225, 238);
+}
+
+.content {
+    display: flex;
+    background-color: aliceblue;
+    border: black;
+    padding: 25px;
+    align-items: center;
+    border-bottom: 1px solid rgb(153, 225, 238);
+}
+
+.feedback h2 {
+    padding: 20px;    
+}
+
+.feedback p {
+    flex-basis: 50%;
+    padding: 15px;
+    border: 0.1px solid rgb(116, 209, 201);
+    margin: 20px;
+}
+
+.user-feedback {
+    display: flex;
+    background-color: aliceblue;
+    padding: 25px;
+    justify-content: center;
+}
+
+.user-feedback textarea {
+    flex-basis: 25%;
+    height: 60px;
+    font-size: 15px;
+    background-color: #fff;
+    padding: 10px;
+}
+
+.user-feedback button {
+    background-color: rgb(50, 199, 199);
+    font-size: 20px;
+    font-weight: bold;
+    padding: 15px;
+    color: aliceblue;
+    transition-duration: 0.3s;
+}
+
+.user-feedback button:hover {
+    background-color: rgb(127, 188, 223);
+}
+
+.features {
+    padding: 50px;
+    background-color: rgb(226, 238, 250);
+    color: rgb(40, 121, 117);
+    border-bottom: 1px solid rgb(153, 225, 238);
+    display: flex;
+    justify-content: space-around;
+}
+
+.features div {
+    border: 1px solid rgb(53, 52, 51);
+    border-radius: 50%;
+    height: 200px;
+    width: 150px;
+    background-color: #f2fcff;
+}
+
+.features h3 {
+    padding: 50px 25px;
+    text-align: center;
+}
+
+.about {
+    padding: 70px;
+    background-color: rgb(220, 230, 240);
+    color: rgb(40, 121, 117);
+    border-bottom: 1px solid rgb(153, 225, 238);
+    display: flex;
+}
+
+.abt-text {
+    max-width: 800px;
+    font-size: 20px;
+    margin: 0 auto 20px;
+}
+
+.abt-text p {
+    margin-bottom: 20px;
+}
+.abt-text h2 {
+    margin: 10px 0px;
+}
+
+.abt-text ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.abt-text ul li {
+    text-align: left;
+    margin: 10px 0;
+}
+
+.footer {
+    background-color: rgb(34, 139, 139);
+    color: aliceblue;
+    padding: 30px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.links a {
+    text-decoration: none;
+    color: aliceblue;
+    padding: 10px;
+    margin: 20px;
+    border-right: 1px solid aliceblue;
+    font-size: 17px;
+}
+
+.links a:hover {
+    color: aquamarine;
+}
+
+.copyright {
+    padding-top:  40px;
+}
+
+/* singup page */
+.container {
+    max-width: 1000px;
+    margin: 200px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 10);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container h2 {
+    text-align: center;
+    color: aliceblue;
+    background-color: rgb(34, 139, 139);
+    padding: 15px;
+
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.row label {
+    font-weight: bold;
+    margin-right: 10px;
+    color: #555;
+}
+
+.row input[type="text"],.row input[type="date"],
+.row input[type="number"],.row input[type="email"],.row input[type="tel"],.row input[type="password"] {
+    flex: 1;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    margin: 15px;
+ }
+ 
+input[type="radio"] {
+    width: auto;
+    margin-right: 10px;
+
+}
+
+input[type="submit"] {
+    width: 100%;
+    background-color: #119da4;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.back-link {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    color: #555;
+    text-decoration: none;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+    color: #119da4;
+}
+
+
+/* Login */
+
+.login-nav {
+    margin-top: 15px;
+    padding-bottom: 15px;
+    display: flex;
+    justify-content: space-around;
+    background-color: #e0f8e1;
+}
